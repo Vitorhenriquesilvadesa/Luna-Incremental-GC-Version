@@ -1,0 +1,7 @@
+def write(x) {
+	print x
+}
+
+def writeln(x) {
+	println x
+}

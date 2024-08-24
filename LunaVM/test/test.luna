@@ -1,0 +1,6 @@
+import "test/stdlib"
+
+var message = input()
+var numInput = double(message)
+
+writeln(numInput + " Hello")

@@ -1,0 +1,92 @@
+﻿struct Node {
+    def init(value) {
+        self.value = value
+        self.next = null
+    }
+}
+
+struct List {
+    def init() {
+        self.head = null 
+        self.length = 0
+    }
+    
+    def append(value) {
+        var newNode = Node(value)
+
+        if (self.length == 0) {
+            self.head = newNode
+        } else {
+            var current = self.head
+            while (current.next != null) {
+                current = current.next
+            }
+            current.next = newNode
+        }
+        self.length = self.length + 1
+    }
+
+    def get(index) {
+        if (index < 0 or index >= self.length) {
+            return null
+        }
+        
+        var current = self.head
+        var i = 0
+
+        while (i < index) {
+            current = current.next
+            i = i + 1
+        }
+        return current.value
+    }
+
+    def remove(value) {
+        var current = self.head
+        var previous = null
+
+        while (current != null) {
+            if (current.value == value) {
+                if (previous == null) {
+                    self.head = current.next
+                } else {
+                    previous.next = current.next
+                }
+                
+                self.length = self.length - 1
+                return value
+            }
+            previous = current
+            current = current.next
+        }
+
+        return null
+    }
+
+    def removeAt(index) {
+        if (index < 0 or index >= self.length) {
+            return null
+        }
+
+        var removedValue = null
+
+        if (index == 0) {
+            removedValue = self.head.value
+            self.head = self.head.next
+        } else {
+            var current = self.head
+            var previous = null
+            var i = 0
+            while (i < index) {
+                previous = current
+                current = current.next
+                i = i + 1
+            }
+            removedValue = current.value
+            previous.next = current.next
+        }
+
+        self.length = self.length - 1
+        return removedValue
+    }
+}

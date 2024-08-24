@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LunaVM", "LunaVM\LunaVM.vcxproj", "{B2018F68-5042-49D4-930D-6444482A781D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{DEA219FA-4473-4E0D-B996-2BFF2E77CA0D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2018F68-5042-49D4-930D-6444482A781D}.Debug|x64.ActiveCfg = Debug|x64
+		{B2018F68-5042-49D4-930D-6444482A781D}.Debug|x64.Build.0 = Debug|x64
+		{B2018F68-5042-49D4-930D-6444482A781D}.Debug|x86.ActiveCfg = Debug|Win32
+		{B2018F68-5042-49D4-930D-6444482A781D}.Debug|x86.Build.0 = Debug|Win32
+		{B2018F68-5042-49D4-930D-6444482A781D}.Release|x64.ActiveCfg = Release|x64
+		{B2018F68-5042-49D4-930D-6444482A781D}.Release|x64.Build.0 = Release|x64
+		{B2018F68-5042-49D4-930D-6444482A781D}.Release|x86.ActiveCfg = Release|Win32
+		{B2018F68-5042-49D4-930D-6444482A781D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58F319C8-7095-40E2-B08C-F810F27B8FD8}
+	EndGlobalSection
+EndGlobal
